@@ -11,6 +11,12 @@
     </head>
     <body>
         <div class="container">
+            <div class="tooltip" id="myTooltip">
+                <i class="fa fa-clipboard" style="float: right;">
+                  <span class="tooltiptext">Copy to clipboard</span>
+                </i>
+                </div>
+
            <h1>
            <i class="fas fa-quote-left"></i>
            <span class="quote" id="quote"></span>
@@ -20,7 +26,10 @@
 
            <hr/>
            <div class="buttons">
-               <a class="twitter" id="tweet" href="https://twitter.com/intent/tweet?text=Greetings" data-size="large" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+               <div>
+                <a class="btn twitter" id="tweet" title="Share to twitter" href="https://twitter.com/intent/tweet?text=Greetings" data-size="large" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+               <a class="btn facebook" id="facebook" title="Share to facebook" href="https://www.facebook.com/sharer/sharer.php?quote=Greetings" data-size="large" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+               </div>
                <button class="next" id="next-quota">Next quote</button>
            </div>
        </div>
